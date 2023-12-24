@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/conf"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/internal/conf"
 )
 
 var (

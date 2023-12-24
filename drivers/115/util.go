@@ -5,10 +5,10 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/http_range"
+	"github.com/gweffectx/safedav/pkg/utils"
 	"github.com/orzogc/fake115uploader/cipher"
 	"io"
 	"net/url"
@@ -19,7 +19,7 @@ import (
 	"time"
 
 	driver115 "github.com/SheltonZhu/115driver/pkg/driver"
-	"github.com/alist-org/alist/v3/internal/conf"
+	"github.com/gweffectx/safedav/internal/conf"
 	"github.com/pkg/errors"
 )
 

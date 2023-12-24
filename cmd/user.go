@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/internal/setting"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 func DelAdminCacheOnline() {

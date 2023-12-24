@@ -3,9 +3,9 @@ package common
 import (
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
 	"github.com/golang-jwt/jwt/v4"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/model"
 	"github.com/pkg/errors"
 )
 

@@ -3,8 +3,8 @@ package db
 import (
 	log "github.com/sirupsen/logrus"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/model"
 	"gorm.io/gorm"
 )
 

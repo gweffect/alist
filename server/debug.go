@@ -5,9 +5,9 @@ import (
 	_ "net/http/pprof"
 	"runtime"
 
-	"github.com/alist-org/alist/v3/server/common"
-	"github.com/alist-org/alist/v3/server/middlewares"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/server/common"
+	"github.com/gweffectx/safedav/server/middlewares"
 )
 
 func _pprof(g *gin.RouterGroup) {

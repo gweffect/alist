@@ -6,11 +6,11 @@ import (
 	"strconv"
 
 	"github.com/Xhofe/wopan-sdk-go"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 type Wopan struct {

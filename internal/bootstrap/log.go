@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/cmd/flags"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/pkg/utils"
 	"github.com/natefinch/lumberjack"
 	"github.com/sirupsen/logrus"
 )

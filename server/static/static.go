@@ -3,17 +3,17 @@ package static
 import (
 	"errors"
 	"fmt"
-	"github.com/alist-org/alist/v3/public"
+	"github.com/gweffectx/safedav/public"
 	"io"
 	"io/fs"
 	"net/http"
 	"os"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/setting"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 var static fs.FS = public.Public

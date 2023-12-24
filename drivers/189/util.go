@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	myrand "github.com/alist-org/alist/v3/pkg/utils/random"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/utils"
+	myrand "github.com/gweffectx/safedav/pkg/utils/random"
 	jsoniter "github.com/json-iterator/go"
 	log "github.com/sirupsen/logrus"
 )

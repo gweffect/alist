@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/dustinxie/ecc"
 	"github.com/go-resty/resty/v2"
 	"github.com/google/uuid"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 func (d *AliDrive) createSession() error {
@@ -35,7 +35,7 @@ func (d *AliDrive) createSession() error {
 			"refreshToken": d.RefreshToken,
 		})
 	}, nil)
-	if err == nil{
+	if err == nil {
 		state.retry = 0
 	}
 	return err

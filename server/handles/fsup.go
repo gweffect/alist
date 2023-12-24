@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/stream"
+	"github.com/gweffectx/safedav/internal/stream"
 
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/fs"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/server/common"
 )
 
 func getLastModified(c *gin.Context) time.Time {

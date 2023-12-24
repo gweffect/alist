@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 
-	"github.com/alist-org/alist/v3/drivers/webdav/odrvcookie"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/gowebdav"
+	"github.com/gweffectx/safedav/drivers/webdav/odrvcookie"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/gowebdav"
 )
 
 // do others that not defined in Driver interface

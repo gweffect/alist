@@ -1,9 +1,9 @@
 package bootstrap
 
 import (
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/offline_download/tool"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/fs"
+	"github.com/gweffectx/safedav/internal/offline_download/tool"
 	"github.com/xhofe/tache"
 )
 

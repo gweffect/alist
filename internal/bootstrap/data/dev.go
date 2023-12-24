@@ -3,11 +3,11 @@ package data
 import (
 	"context"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/message"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
+	"github.com/gweffectx/safedav/cmd/flags"
+	"github.com/gweffectx/safedav/internal/db"
+	"github.com/gweffectx/safedav/internal/message"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
 	log "github.com/sirupsen/logrus"
 )
 

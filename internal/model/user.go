@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/pkg/utils/random"
 	"github.com/go-webauthn/webauthn/webauthn"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/pkg/utils/random"
 	"github.com/pkg/errors"
 )
 

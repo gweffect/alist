@@ -3,12 +3,12 @@ package middlewares
 import (
 	"crypto/subtle"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/internal/setting"
+	"github.com/gweffectx/safedav/server/common"
 	log "github.com/sirupsen/logrus"
 )
 

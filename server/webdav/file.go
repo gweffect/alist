@@ -10,10 +10,10 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/fs"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
 )
 
 // slashClean is equivalent to but slightly more efficient than

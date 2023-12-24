@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/gweffectx/safedav/internal/model"
 )
 
 type Resp struct {
@@ -203,7 +203,6 @@ type UploadFileDataRsp struct {
 		Extinfo          string    `json:"extinfo"`
 	} `json:"data"`
 }
-
 
 type UploadDoneParam struct {
 	Cataid string `json:"cataid"`

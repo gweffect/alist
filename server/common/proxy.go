@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/net"
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/net"
+	"github.com/gweffectx/safedav/pkg/http_range"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 func Proxy(w http.ResponseWriter, r *http.Request, link *model.Link, file model.Obj) error {

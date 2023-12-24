@@ -13,14 +13,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/errgroup"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/avast/retry-go"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/errgroup"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 type BaiduPhoto struct {

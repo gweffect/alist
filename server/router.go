@@ -1,16 +1,16 @@
 package server
 
 import (
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/message"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/common"
-	"github.com/alist-org/alist/v3/server/handles"
-	"github.com/alist-org/alist/v3/server/middlewares"
-	"github.com/alist-org/alist/v3/server/static"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/cmd/flags"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/message"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/server/common"
+	"github.com/gweffectx/safedav/server/handles"
+	"github.com/gweffectx/safedav/server/middlewares"
+	"github.com/gweffectx/safedav/server/static"
 )
 
 func Init(e *gin.Engine) {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/pkg/http_range"
+	"github.com/gweffectx/safedav/pkg/utils"
 
 	mapset "github.com/deckarep/golang-set/v2"
 

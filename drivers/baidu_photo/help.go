@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 // Tid生成

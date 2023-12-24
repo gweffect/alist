@@ -1,11 +1,11 @@
 package op
 
 import (
-	"github.com/alist-org/alist/v3/internal/errs"
+	"github.com/gweffectx/safedav/internal/errs"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

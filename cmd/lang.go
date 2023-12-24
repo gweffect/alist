@@ -11,11 +11,11 @@ import (
 	"reflect"
 	"strings"
 
-	_ "github.com/alist-org/alist/v3/drivers"
-	"github.com/alist-org/alist/v3/internal/bootstrap/data"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	_ "github.com/gweffectx/safedav/drivers"
+	"github.com/gweffectx/safedav/internal/bootstrap/data"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/pkg/utils"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

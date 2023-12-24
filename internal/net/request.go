@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/alist-org/alist/v3/pkg/http_range"
 	"github.com/aws/aws-sdk-go/aws/awsutil"
+	"github.com/gweffectx/safedav/pkg/http_range"
 	log "github.com/sirupsen/logrus"
 )
 

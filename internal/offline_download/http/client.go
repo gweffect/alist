@@ -2,9 +2,9 @@ package http
 
 import (
 	"fmt"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/offline_download/tool"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/offline_download/tool"
+	"github.com/gweffectx/safedav/pkg/utils"
 	"net/http"
 	"net/url"
 	"os"

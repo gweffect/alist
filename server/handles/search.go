@@ -4,13 +4,13 @@ import (
 	"path"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/search"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/internal/search"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/server/common"
 	"github.com/pkg/errors"
 )
 

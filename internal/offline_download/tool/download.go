@@ -2,9 +2,9 @@ package tool
 
 import (
 	"fmt"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/setting"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/setting"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 	"github.com/xhofe/tache"

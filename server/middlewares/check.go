@@ -3,10 +3,10 @@ package middlewares
 import (
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/server/common"
 )
 
 func StoragesLoaded(c *gin.Context) {

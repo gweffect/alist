@@ -2,8 +2,8 @@
   <a href="https://alist.nn.ci"><img height="100px" alt="logo" src="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg"/></a>
   <p><em>🗂一个支持多存储的文件列表程序，使用 Gin 和 Solidjs。</em></p>
 <div>
-  <a href="https://goreportcard.com/report/github.com/alist-org/alist/v3">
-    <img src="https://goreportcard.com/badge/github.com/alist-org/alist/v3" alt="latest version" />
+  <a href="https://goreportcard.com/report/github.com/gweffectx/safedav">
+    <img src="https://goreportcard.com/badge/github.com/gweffectx/safedav" alt="latest version" />
   </a>
   <a href="https://github.com/Xhofe/alist/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/Xhofe/alist" alt="License" />

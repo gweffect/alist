@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/cookie"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/setting"
+	"github.com/gweffectx/safedav/pkg/cookie"
 	json "github.com/json-iterator/go"
 	jsoniter "github.com/json-iterator/go"
 )

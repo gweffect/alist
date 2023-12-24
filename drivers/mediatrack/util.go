@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

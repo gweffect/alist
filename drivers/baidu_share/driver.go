@@ -10,10 +10,10 @@ import (
 	"path"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/model"
 )
 
 type BaiduShare struct {

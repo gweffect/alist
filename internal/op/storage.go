@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/generic_sync"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	mapset "github.com/deckarep/golang-set/v2"
+	"github.com/gweffectx/safedav/internal/db"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/generic_sync"
+	"github.com/gweffectx/safedav/pkg/utils"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 )

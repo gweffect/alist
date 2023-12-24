@@ -9,10 +9,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/gweffectx/safedav/drivers/base"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/model"
 )
 
 type Trainbit struct {

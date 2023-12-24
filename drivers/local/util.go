@@ -9,10 +9,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/disintegration/imaging"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/utils"
 	ffmpeg "github.com/u2takey/ffmpeg-go"
 )
 

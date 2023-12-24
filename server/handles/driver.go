@@ -3,9 +3,9 @@ package handles
 import (
 	"fmt"
 
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/server/common"
 )
 
 func ListDriverInfo(c *gin.Context) {

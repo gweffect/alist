@@ -2,10 +2,10 @@ package tool
 
 import (
 	"context"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/op"
 	"github.com/google/uuid"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/op"
 	"github.com/pkg/errors"
 	"github.com/xhofe/tache"
 	"path/filepath"

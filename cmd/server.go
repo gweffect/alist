@@ -13,12 +13,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/bootstrap"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server"
 	"github.com/gin-gonic/gin"
+	"github.com/gweffectx/safedav/cmd/flags"
+	"github.com/gweffectx/safedav/internal/bootstrap"
+	"github.com/gweffectx/safedav/internal/conf"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/server"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

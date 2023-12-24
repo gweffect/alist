@@ -1,4 +1,4 @@
-module github.com/alist-org/alist/v3
+module github.com/gweffectx/safedav
 
 go 1.21
 

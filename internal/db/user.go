@@ -3,9 +3,9 @@ package db
 import (
 	"encoding/base64"
 
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/go-webauthn/webauthn/webauthn"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/pkg/utils"
 	"github.com/pkg/errors"
 )
 

@@ -1,10 +1,10 @@
 package alistlib
 
 import (
-	"github.com/alist-org/alist/v3/cmd"
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/gweffectx/safedav/cmd"
+	"github.com/gweffectx/safedav/cmd/flags"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/pkg/utils"
 )
 
 func SetConfigData(path string) {

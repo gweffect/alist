@@ -10,13 +10,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/stream"
+	"github.com/gweffectx/safedav/internal/stream"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/model"
 	log "github.com/sirupsen/logrus"
 )
 

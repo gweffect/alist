@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/alist-org/alist/v3/drivers/base"
 	"github.com/go-resty/resty/v2"
+	"github.com/gweffectx/safedav/drivers/base"
 )
 
 func (d *ChaoXing) requestDownload(pathname string, method string, callback base.ReqCallback, resp interface{}) ([]byte, error) {
@@ -79,7 +79,7 @@ func (d *ChaoXing) GetFiles(parent string) ([]File, error) {
 		return nil, err
 	}
 	if resp.Result != 1 {
-		msg:=fmt.Sprintf("error code is:%d", resp.Result)
+		msg := fmt.Sprintf("error code is:%d", resp.Result)
 		return nil, errors.New(msg)
 	}
 	if len(resp.List) > 0 {

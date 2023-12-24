@@ -3,20 +3,20 @@ package crypt
 import (
 	"context"
 	"fmt"
-	"github.com/alist-org/alist/v3/internal/stream"
+	"github.com/gweffectx/safedav/internal/stream"
 	"io"
 	stdpath "path"
 	"regexp"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/common"
+	"github.com/gweffectx/safedav/internal/driver"
+	"github.com/gweffectx/safedav/internal/errs"
+	"github.com/gweffectx/safedav/internal/fs"
+	"github.com/gweffectx/safedav/internal/model"
+	"github.com/gweffectx/safedav/internal/op"
+	"github.com/gweffectx/safedav/pkg/http_range"
+	"github.com/gweffectx/safedav/pkg/utils"
+	"github.com/gweffectx/safedav/server/common"
 	rcCrypt "github.com/rclone/rclone/backend/crypt"
 	"github.com/rclone/rclone/fs/config/configmap"
 	"github.com/rclone/rclone/fs/config/obscure"
@@ -160,7 +160,7 @@ func (d *Crypt) List(ctx context.Context, dir model.Obj, args model.ListArgs) ([
 				// discarding hash as it's encrypted
 			}
 			if d.Thumbnail && thumb == "" {
-				thumb = utils.EncodePath(common.GetApiUrl(nil) + stdpath.Join("/d", args.ReqPath, ".thumbnails", name+".webp"), true)
+				thumb = utils.EncodePath(common.GetApiUrl(nil)+stdpath.Join("/d", args.ReqPath, ".thumbnails", name+".webp"), true)
 			}
 			if !ok && !d.Thumbnail {
 				result = append(result, &objRes)
