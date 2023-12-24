@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/url"
 
+	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/internal/model"
 	"github.com/gweffectx/safedav/internal/net"
 	"github.com/gweffectx/safedav/pkg/http_range"
@@ -70,7 +71,9 @@ func Proxy(w http.ResponseWriter, r *http.Request, link *model.Link, file model.
 		if r.Method == http.MethodHead {
 			return nil
 		}
-		_, err = io.Copy(w, res.Body)
+		key := []byte("wumansgygoaescbc")
+		safeReader := encrypt.NewDecryptReader(res.Body, key)
+		_, err = io.Copy(w, safeReader)
 		if err != nil {
 			return err
 		}

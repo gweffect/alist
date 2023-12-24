@@ -17,6 +17,7 @@ import (
 
 	"github.com/gweffectx/safedav/internal/stream"
 
+	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/internal/errs"
 	"github.com/gweffectx/safedav/internal/fs"
 	"github.com/gweffectx/safedav/internal/model"
@@ -330,9 +331,11 @@ func (h *Handler) handlePut(w http.ResponseWriter, r *http.Request) (status int,
 		Modified: h.getModTime(r),
 		Ctime:    h.getCreateTime(r),
 	}
+	key := []byte("wumansgygoaescbc")
+	encryptReader := encrypt.NewEncryptReader(r.Body, key)
 	stream := &stream.FileStream{
 		Obj:      &obj,
-		Reader:   r.Body,
+		Reader:   encryptReader,
 		Mimetype: r.Header.Get("Content-Type"),
 	}
 	if stream.Mimetype == "" {
