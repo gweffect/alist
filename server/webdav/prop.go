@@ -189,6 +189,7 @@ func props(ctx context.Context, ls LockSystem, fi model.Obj, pnames []xml.Name) 
 
 	pstatOK := Propstat{Status: http.StatusOK}
 	pstatNotFound := Propstat{Status: http.StatusNotFound}
+	//base64Encoder := encrypt.NewFileNameBase64()
 	for _, pn := range pnames {
 		// If this file has dead properties, check if they contain pn.
 		if dp, ok := deadProps[pn]; ok {
@@ -197,7 +198,9 @@ func props(ctx context.Context, ls LockSystem, fi model.Obj, pnames []xml.Name) 
 		}
 		// Otherwise, it must either be a live property or we don't know it.
 		if prop := liveProps[pn]; prop.findFn != nil && (prop.dir || !isDir) {
-			innerXML, err := prop.findFn(ctx, ls, fi.GetName(), fi)
+			name := fi.GetName()
+			//name = base64Encoder.Decrypt(name)
+			innerXML, err := prop.findFn(ctx, ls, name, fi)
 			if err != nil {
 				return nil, err
 			}

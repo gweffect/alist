@@ -207,10 +207,13 @@ func pagination(objs []model.Obj, req *model.PageReq) (int, []model.Obj) {
 
 func toObjsResp(objs []model.Obj, parent string, encrypt bool) []ObjResp {
 	var resp []ObjResp
+	//base64Encoder := encryptName.NewFileNameBase64()
 	for _, obj := range objs {
 		thumb, _ := model.GetThumb(obj)
+		name := obj.GetName()
+		//name = base64Encoder.Decrypt(name)
 		resp = append(resp, ObjResp{
-			Name:        obj.GetName(),
+			Name:        name,
 			Size:        obj.GetSize(),
 			IsDir:       obj.IsDir(),
 			Modified:    obj.ModTime(),

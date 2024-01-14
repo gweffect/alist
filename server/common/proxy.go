@@ -6,6 +6,8 @@ import (
 	"io"
 	"net/http"
 	"net/url"
+	"strconv"
+	"strings"
 
 	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/internal/model"
@@ -62,8 +64,24 @@ func Proxy(w http.ResponseWriter, r *http.Request, link *model.Link, file model.
 		if err != nil {
 			return err
 		}
-		defer res.Body.Close()
-
+		key := []byte("wumansgygoaescbc")
+		safeReader := encrypt.NewDecryptReader(res.Body, key)
+		defer safeReader.Close()
+		contentRange := res.Header.Get("Content-Range")
+		if contentRange != "" {
+			contentRange = strings.Replace(contentRange, "bytes ", "", 1)
+			rangeStartString := strings.Split(contentRange, "-")[0]
+			if rangeStartString != "" {
+				rangeStart, err := strconv.ParseInt(rangeStartString, 0, 64)
+				if err == nil {
+					if rangeStart > 0 {
+						safeReader.SetOffset(rangeStart)
+					}
+				}
+			}
+		}
+		fmt.Println("请求链接:" + link.URL)
+		fmt.Println("响应Content-Range:" + res.Header.Get("Content-Range"))
 		for h, v := range res.Header {
 			w.Header()[h] = v
 		}
@@ -71,8 +89,7 @@ func Proxy(w http.ResponseWriter, r *http.Request, link *model.Link, file model.
 		if r.Method == http.MethodHead {
 			return nil
 		}
-		key := []byte("wumansgygoaescbc")
-		safeReader := encrypt.NewDecryptReader(res.Body, key)
+
 		_, err = io.Copy(w, safeReader)
 		if err != nil {
 			return err

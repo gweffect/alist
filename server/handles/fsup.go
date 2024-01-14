@@ -1,13 +1,15 @@
 package handles
 
 import (
-	"github.com/xhofe/tache"
 	"io"
 	"net/url"
 	stdpath "path"
 	"strconv"
 	"time"
 
+	"github.com/xhofe/tache"
+
+	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/internal/stream"
 
 	"github.com/gin-gonic/gin"
@@ -48,13 +50,17 @@ func FsStream(c *gin.Context) {
 		common.ErrorResp(c, err, 400)
 		return
 	}
+	key := []byte("wumansgygoaescbc")
+	encryptReader := encrypt.NewEncryptReader(c.Request.Body, key)
+	//base64Encoder := encrypt.NewFileNameBase64()
+	//name = base64Encoder.Encrypt(name)
 	s := &stream.FileStream{
 		Obj: &model.Object{
 			Name:     name,
 			Size:     size,
 			Modified: getLastModified(c),
 		},
-		Reader:       c.Request.Body,
+		Reader:       encryptReader,
 		Mimetype:     c.GetHeader("Content-Type"),
 		WebPutAsTask: asTask,
 	}

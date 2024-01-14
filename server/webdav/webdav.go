@@ -325,8 +325,11 @@ func (h *Handler) handlePut(w http.ResponseWriter, r *http.Request) (status int,
 	if err != nil {
 		return http.StatusForbidden, err
 	}
+	name := path.Base(reqPath)
+	//base64Encoder := encrypt.NewFileNameBase64()
+	//name = base64Encoder.Encrypt(name)
 	obj := model.Object{
-		Name:     path.Base(reqPath),
+		Name:     name,
 		Size:     r.ContentLength,
 		Modified: h.getModTime(r),
 		Ctime:    h.getCreateTime(r),

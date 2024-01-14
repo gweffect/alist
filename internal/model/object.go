@@ -3,6 +3,7 @@ package model
 import (
 	"time"
 
+	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/pkg/utils"
 )
 
@@ -34,7 +35,9 @@ type Object struct {
 }
 
 func (o *Object) GetName() string {
-	return o.Name
+	base64Encoder := encrypt.NewFileNameBase64()
+	name := base64Encoder.Decrypt(o.Name)
+	return name
 }
 
 func (o *Object) GetSize() int64 {
