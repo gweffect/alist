@@ -52,8 +52,8 @@ func FsStream(c *gin.Context) {
 	}
 	key := []byte("wumansgygoaescbc")
 	encryptReader := encrypt.NewEncryptReader(c.Request.Body, key)
-	//base64Encoder := encrypt.NewFileNameBase64()
-	//name = base64Encoder.Encrypt(name)
+	base64Encoder := encrypt.NewFileNameBase64()
+	name = base64Encoder.Encrypt(name)
 	s := &stream.FileStream{
 		Obj: &model.Object{
 			Name:     name,

@@ -37,7 +37,7 @@ func (ins *EncryptReader) Read(buffer []byte) (n int, err error) {
 	for i := 0; i < dataLength; i++ {
 		buffer[i] = data[i]
 	}
-	return dataLength, err
+	return readLength, err
 }
 
 func (ins *EncryptReader) Close() error {
