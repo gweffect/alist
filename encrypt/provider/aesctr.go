@@ -56,7 +56,7 @@ func (ins *AesCtr) SetOffset(offset int64) {
 	// ins.iv = counterBytes
 	// ins.stream = stream
 
-	chunks := uint64(int(offset) / block.BlockSize())
+	chunks := uint64(offset / blockSize)
 
 	// iv += offset
 	var c uint16

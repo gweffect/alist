@@ -2,6 +2,8 @@ package fs
 
 import (
 	"context"
+
+	"github.com/gweffectx/safedav/encrypt"
 	"github.com/gweffectx/safedav/internal/driver"
 	"github.com/gweffectx/safedav/internal/model"
 	"github.com/gweffectx/safedav/internal/op"
@@ -26,7 +28,24 @@ func List(ctx context.Context, path string, args *ListArgs) ([]model.Obj, error)
 		}
 		return nil, err
 	}
-	return res, nil
+	objs := make([]model.Obj, len(res))
+	base64Encoder := encrypt.NewFileNameBase64()
+	for index, o := range res {
+		name := o.GetName()
+		name = base64Encoder.Decrypt(name)
+		newObj := model.Object{
+			ID:       o.GetID(),
+			Name:     name,
+			Size:     o.GetSize(),
+			Modified: o.ModTime(),
+			IsFolder: o.IsDir(),
+			Ctime:    o.CreateTime(),
+			Path:     o.GetPath(),
+			HashInfo: o.GetHash(),
+		}
+		objs[index] = &newObj
+	}
+	return objs, nil
 }
 
 type GetArgs struct {
